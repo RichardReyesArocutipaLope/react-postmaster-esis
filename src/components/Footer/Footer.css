@@ -1,0 +1,10 @@
+/**** footer ****/
+footer {
+  background-color: #1a1a1a;
+  font-family: 'Catamaran', sans-serif;
+  padding: 1rem 0;
+}
+.footer__info{
+  color: #e6e6e6;
+  text-align: center;
+}

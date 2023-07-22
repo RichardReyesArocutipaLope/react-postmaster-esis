@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.imagenlogin {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/img/background/banner_1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(80px) contrast(150%) brightness(70%);
+}
+
+.login-in__blur {
+  animation-name: quitblur;
+  animation-duration: .5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes quitblur {
+  0% {
+    backdrop-filter: blur(80px) saturate(100%) contrast(150%) brightness(70%);
+  }
+
+  100% {
+    backdrop-filter: blur(2px) saturate(110%) contrast(130%) brightness(80%);
+  }
+}
+
+.login {
+  width: 28rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  color: #c8c8c8;
+  border-radius: .5rem;
+  transition: width .2s, height .2s;
+}
+
+.login__title {
+  text-align: center;
+}
+
+.login__logo {
+  width: 17vh;
+  height: 17vh;
+  margin: 1.5rem 0;
+}
+
+.login__item {
+  padding: .7rem 1rem;
+}
+
+.login__item--center {
+  text-align: center;
+}
+
+.login__label {
+  display: block;
+  padding-bottom: .5rem;
+  color: #c8c8c8;
+  font-size: 1.2rem;
+}
+
+.login__input {
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  border-radius: .2rem;
+  padding: .3rem .5rem;
+  color: #c8c8c8;
+  font-size: 1.2rem;
+}
+
+.login__input:focus-visible {
+  outline: 1px solid #ffffff;
+}
+
+.login__input--submit {
+  display: inline-block;
+  width: 55%;
+  background-color: #2d00d1;
+  border: 1px solid #2d00d1;
+  border-radius: .4rem;
+  padding: .4rem;
+  font-size: 1.1rem;
+  transform: scale(1);
+  transition: transform .3s;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.login__input--submit:hover {
+  transform: scale(1.1);
+  background-color: #3408cf;
+}
+
+.login__createAccount {
+  color: #c8c8c8;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* animacion */
+
+.login-in {
+  width: 50vw;
+  height: 80vh;
+  padding: 0rem;
+  background-color: rgba(0, 0, 0, 1);
+  animation-name: loading;
+  animation-duration: .5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes loading {
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.login-in .login__title {
+  display: none;
+}
+
+.login-in .login__logo-container {
+  display: none;
+}
+
+.login-in .login__form {
+  display: none;
+}
+
+.login-in__header {
+  height: 2rem;
+  border-bottom: 1px solid #383838;
+  display: flex;
+  gap: .5rem;
+  padding-left: .5rem;
+}
+
+.login-in__circle {
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+}
+
+.login-in__circle--red {
+  background-color: #FD5F5D;
+}
+
+.login-in__circle--orange {
+  background-color: #FBC229;
+}
+
+.login-in__circle--green {
+  background-color: #2BC743;
+}
+
+
+.login-in__tipeo {
+  overflow: hidden;
+  height: calc(100% - 2rem);
+  padding: 1rem;
+}
+
+.login-in__cursor {
+  display: inline-block;
+  height: 1.2rem;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation-name: mouse, tipear;
+  animation-duration: .5s, 1s;
+  animation-iteration-count: infinite, 1;
+  animation-delay: 0s, 0s;
+  color: rgb(194, 194, 194);
+  font-size: .9rem;
+}
+
+@keyframes mouse {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes tipear {
+  0% {
+    width: 0ch;
+  }
+}
+
+.login-in__cod-container {
+  height: calc(100% - 2rem);
+  margin-top: .5rem;
+  overflow: hidden;
+}
+
+.login-in__cod {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: up;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  margin-right: .5rem;
+  font-family: 'Fira Code', monospace;
+  color: #009616;
+  height: 0rem;
+  overflow: hidden;
+  font-size: .9rem;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+    height: auto;
+    overflow: initial;
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

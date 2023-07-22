@@ -1,0 +1,27 @@
+/**** section auspiciadores ****/
+.section-auspiciadores {
+  background-color: #9013fe;
+  padding-bottom: 5rem;
+}
+
+.auspiciadores__link {
+  width: 24%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.auspiciadores__link img {
+  width: 60%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.auspiciadores__link img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 0.5s ease;
+  transform: scale(1.5);
+}

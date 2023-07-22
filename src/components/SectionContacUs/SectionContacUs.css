@@ -1,0 +1,123 @@
+/**** section contactanos ****/
+.section-contactanos {
+  padding: 3rem;
+  background-color: #2b2c3e;
+}
+
+.separacion {
+  border-bottom: 1px solid #707070;
+  margin: 1rem 0;
+}
+
+.contactanos__title {
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.contactanos__title .lined {
+  margin: 0 2.5rem .8rem;
+  border-bottom: 1px solid #9013fe;
+}
+
+.contactanos__title h1 {
+  font-size: 2.8rem;
+}
+
+.contactanos__title p {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  color: #9013fe;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.contactanos__info {
+  padding: 2rem;
+}
+
+.contactanos__info h3 {
+  font-family: 'Bodoni Moda', serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactanos__info p {
+  color: #8d8d8d;
+  font-size: 0.8rem;
+}
+
+.contactanos__info>div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.contactanos__info .main-nav__link {
+  margin-left: 1rem;
+}
+
+.contactanos__form {
+  padding: 0rem 2rem;
+  font-family: 'Catamaran', sans-serif;
+  color: #8d8d8d;
+}
+
+.contactanos__form-title {
+  font-family: 'Bodoni Moda', serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 1rem 0;
+}
+
+.inputs {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 50%;
+}
+
+.inputs__label {
+  width: 100%;
+}
+
+.inputs__item {
+  background-color: transparent;
+  color: #8d8d8d;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.inputs__item:focus {
+  outline: none;
+  background-color: #3d3f55;
+}
+
+.enviar {
+  width: 80%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px solid #8d8d8d;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.recaptcha {
+  width: 200px;
+  height: 100px;
+  background-color: #cccccc;
+  margin: 1rem;
+}
+
+.flx-a-c {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,209 @@
+.speaker-full-wrapper {
+  height: 100vh;
+  width: 100vw;
+  gap: 3rem;
+}
+
+.speaker-full {
+  padding: 2rem;
+}
+
+.speaker-full__img {
+  width: 20vw;
+  height: 60vh;
+  position: relative;
+  filter: brightness(70%);
+}
+
+.speaker-full__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid black;
+  top: 1rem;
+  left: 1rem;
+  box-shadow: 0px 0px 10px black;
+  z-index: -1;
+  background-color: #112240;
+
+}
+
+.speaker-full__info {
+  width: 40vw;
+  padding: 1.5rem;
+  padding-left: 4rem;
+}
+
+.speaker-full__name {
+  font-size: 1.8rem;
+  color: rgb(211, 211, 211);
+  text-align: start;
+}
+
+.speaker-full__title {
+  font-size: 1.1rem;
+  color: rgb(180, 180, 180);
+  padding-top: .2rem;
+  padding-bottom: .8rem;
+  font-weight: 400;
+  text-align: start;
+  margin-bottom: .5rem;
+}
+.ponente-xd{
+  padding-bottom: .2rem;
+  color: #64FFDA;
+}
+
+.speaker-full__description-wrapper {
+  position: relative;
+  width: 100%;
+  height: 26vh;
+}
+
+.speaker-full__description {
+  width: 100%;
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  color: rgb(184, 184, 185);
+  text-align: start;
+  position: absolute;
+  padding: 1rem;
+  background-color: #112240;
+  box-shadow: 0px 0px 10px black;
+  overflow: auto;
+  height: 100%;
+}
+
+.speaker-full__presence {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-full__presence button {
+  background-color: #64FFDA;
+  color: black;
+  padding: .6rem 1rem;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  transform: scale(1);
+  animation-name: efe;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+}
+.speaker-full__presence.asistido button {
+  background-color: rgb(0, 255, 0);
+  color: black;
+  padding: .6rem 1rem;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  transform: scale(1);
+  animation-name: xd;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+}
+
+@keyframes efe {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.speaker-full__presence__disabled {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-full__presence__disabled button {
+  background-color: #8f0e0e;
+  color: black;
+  padding: .6rem 1rem;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  transform: scale(1);
+  /* animation-name: efe;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  cursor: pointer; */
+}
+
+/*modal  */
+
+.day-schedule__mblur {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.2);
+  z-index: 100;
+  display: none;
+  backdrop-filter: blur(6px);
+  padding: 0 1.5rem;
+}
+
+.day-schedule__mblur-active {
+  display: flex;
+}
+
+.day-schedule__modal {
+  width: 20rem;
+  padding: 5vw;
+  background-color: #0f203d;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+
+.modal__presence {
+  padding-bottom: 1rem;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.modal__button {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: .3rem .8rem;
+  background-color: #63d7bc;
+  border: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  transform: scale(1);
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  transform: scale(1.1);
+
+}
+
+.modal__button--cancelar {
+  background-color: #d80000;
+  color: #000000;
+}

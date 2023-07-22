@@ -1,0 +1,79 @@
+/****Header****/
+.header {
+    inset: 0 auto auto 0;
+    position: absolute;
+    height: 4rem;
+    width: 100%;
+    z-index: 40;
+  }
+  .header-nav{
+    height: 100%;
+  }
+  .main-nav{
+    height: 100%;
+  }
+  .main-nav__list{
+    gap: 0.8rem;
+    height: 100%;
+    justify-content: flex-end;
+    padding-right: .5rem;
+  }
+  .main-nav__link {
+    color: #fff;
+    font-size: 1.13rem;
+    text-align: center;
+    padding: .5rem 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .main-nav__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  .main-nav__link:not(.main-nav__link--inscrip):hover::after {
+    transform: scaleX(1);
+  }
+  .main-nav__item:last-child{
+    height: 100%;
+  }
+  .main-nav__link--inscrip {
+    height: 100%;
+    background-color: rgba(16, 22, 94, .9);
+    transition: background-color 0.4s;
+  }
+  .main-nav__link--inscrip:hover {
+    background-color: rgba(16, 22, 94, 0.4);
+  }
+
+
+.nav__user{
+  width: 11rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.nav__user::before{
+  content: 'Salir';
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.nav__user:hover{
+  color: transparent;
+}
+.nav__user:hover::before{
+  opacity: 1;
+}

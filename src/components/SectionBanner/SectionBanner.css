@@ -1,0 +1,74 @@
+/**** MAIN BANNER ****/
+.main-banner__fondo{
+  background-size: cover;
+  background-position: center;
+}
+.main-banner {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  backdrop-filter: blur(0px) saturate(100%) contrast(115%) brightness(80%);
+}
+
+/****logo****/
+.main-logo {
+  position: absolute;
+  width: 15vh;
+  height: 15vh;
+  inset: 1.5rem auto auto 1.5rem;
+  z-index: 30;
+}
+
+/****main title****/
+.main-title {
+  padding: 12% 0px 0px 12%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  color: #fff;
+}
+.main-title__h1 {
+  font-size: 6.3rem;
+}
+.main-title__post span {
+  font-weight: 100;
+}
+.main-title span {
+  transition: transform 0.1s ease;
+}
+.main-title span:hover {
+  transform: translateY(-1rem);
+}
+.main-title p {
+  font-size: 2.2rem;
+}
+
+/****main info****/
+.main-info {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  justify-content: flex-end; 
+  padding: 0 1.5rem 1.5rem 0; 
+}
+.main-info__item {
+  border: 1px solid #fff;
+  width: 14vw;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.main-info__item--preinscrip {
+  background-color: #fff;
+  animation-name: attention;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  color: black;
+}
+@keyframes attention{
+  50%{
+    background-color: rgba(16, 22, 94);
+    border: 1px solid #fff;
+    color: white;
+  }
+}

@@ -1,0 +1,60 @@
+.main-page{
+    background-color: #0A192F;
+}
+.main-page .main-logo{
+    position: fixed;
+    width: 11.2vh;
+    height: 11.2vh;
+    inset: 1.5rem auto auto 1.5rem;
+    z-index: 30;
+}
+.main-page .header{
+    position: fixed;
+    z-index: 1;
+}
+
+
+
+
+.post-master-asistencia{
+    position: fixed;
+    top: 0rem;
+    left: 6rem;
+    z-index: 0;
+    padding: .9rem 3rem;
+}
+.post-master-asistencia h1{
+    font-size: 1.9rem !important;
+    display: flex;
+    gap: 1rem;
+}
+.post-master-asistencia p{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0rem;
+}
+.post-master-asistencia .lined{
+    border-color: white;
+    margin: 0 1rem .8rem;
+}
+
+/* message */
+.main-page__message-u{
+    color: rgb(216, 216, 216);
+    position: fixed;
+    height: 1.3rem;
+    font-size: 1.2rem;
+    top: 57vh;
+    left: -15.5vw;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+
+}
+.main-page__message-u span{
+    margin-left: 1rem;
+    width: 5rem;
+    height: 3px;
+    background-color: rgb(172, 172, 172);
+}
